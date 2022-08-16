@@ -1,10 +1,10 @@
 import csv
 from dataclasses import dataclass
-from email.policy import default
 import json
 import click
-# from make_dict_config import Record, record_to_json
-from make_dict_config_sample import Record, record_to_json
+from make_dict_config import Record, record_to_json
+# from make_dict_config_sample import Record, record_to_json
+# use 'make_dict_config_sample' module instead of 'make_dict_config' when you try sample data.
 
 def read_csv(file_path: str):
     with open(file_path, encoding='utf-8') as f:
